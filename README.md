@@ -13,4 +13,4 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
 Installation
 
 The Easy Way
-![Deploy](https://heroku.com/deploy?template=https://github.com/SandeepBiswal-Gudu/Truecallerprobot)
+[!Deploy](https://heroku.com/deploy?template=https://github.com/SandeepBiswal-Gudu/Truecallerprobot)
