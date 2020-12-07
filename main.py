@@ -30,7 +30,7 @@ def start(client, message):
 
     client.send_message(chat_id=message.chat.id,
 
-                        text=f"`Hi` **{message.from_user.first_name}**\n `Enter the number to search...`",reply_markup=InlineKeyboardMarkup(
+                        text=f"`Hello` **{message.from_user.first_name}**\n `Enter the number to search...`",reply_markup=InlineKeyboardMarkup(
 
             [[InlineKeyboardButton("About", callback_data="about"),
 
@@ -46,11 +46,11 @@ def newbt(client,callback_query):
 
     if txt=="about":
 
-        callback_query.message.edit(text=f"`Bot`            : [Truecallerprobot](t.me/SandeepBiswal)\n`Creator :` [Sandeep Biswal](t.me/SandeepBiswal)\n`Language:` [Python3](https://python.org)\n`Library :` [Pyrogram](https://docs.pyrogram.org/) \n`Server  :` [Heroku](https://herokuapp.com/)",
+        callback_query.message.edit(text=f"`Bot`            : [Main Channel](t.me/ptmlootoffers)\n`Creator :` [Sandeep Biswal](t.me/SandeepBiswal)\n`Language:` [Python3](https://python.org)\n`Library :` [Pyrogram](https://docs.pyrogram.org/) \n`Server  :` [Heroku](https://herokuapp.com/)",
 
                         disable_web_page_preview=True, reply_markup=InlineKeyboardMarkup(
 
-            [[InlineKeyboardButton("Give Feedback", url="t.me/agentnova")]]))
+            [[InlineKeyboardButton("Give Feedback", url="t.me/SandeepBiswal")]]))
 
     elif txt=="src":
 
@@ -62,11 +62,11 @@ def about(client, message):
 
     client.send_message(chat_id=message.chat.id, reply_to_message_id=message.message_id,
 
-                        text=f"`Bot`            : [knowhobot](t.me/knowhobot)\n`Creator :` [agentnova](t.me/agentnova)\n`Language:` [Python3](https://python.org)\n`Library :` [Pyrogram](https://docs.pyrogram.org/) \n`Server  :` [Heroku](https://herokuapp.com/)",
+                        text=f"`Bot`            : [Main Channel](t.me/ptmlootoffers)\n`Creator :` [Sandeep Biswal](t.me/SandeepBiswal)\n`Language:` [Python3](https://python.org)\n`Library :` [Pyrogram](https://docs.pyrogram.org/) \n`Server  :` [Heroku](https://herokuapp.com/)",
 
                         disable_web_page_preview=True, reply_markup=InlineKeyboardMarkup(
 
-            [[InlineKeyboardButton("Feedback", url="t.me/agentnova")]]))
+            [[InlineKeyboardButton("Feedback", url="t.me/SandeepBiswal")]]))
 
 @app.on_message(filters.command(["log"]))
 
@@ -112,9 +112,9 @@ def echo(client, message):
 
     frbsetrmail = ""
 
-    if num.isnumeric and len(num) == 10:
+    if num.isnumeric and len(num) == 5:
 
-        pq = "\n\n**----••Truecallerprobot says----**\n\nLimit exceeded ,try again tomorrow 🤦🏻‍♂️"
+        pq = "\n\n**----••Truecallerprobot says----**\n\nLimit exceeded ,try again tomorrow 🤦🏻‍♂️----\n\nJoin @ptmlootoffers for get more find"
 
         tresponse = ""
 
@@ -236,7 +236,7 @@ def echo(client, message):
 
             }
 
-            firebase.put('/knowho-log', num, data)
+            firebase.put('/Truecallerprobot-log', num, data)
 
         elif frbseyename and frbsefb:
 
@@ -250,7 +250,7 @@ def echo(client, message):
 
             }
 
-            firebase.put('/knowho-log', num, data)
+            firebase.put('/Truecallerprobot-log', num, data)
 
         elif frbseyename and frbsetrname and frbsetrmail:
 
@@ -266,7 +266,7 @@ def echo(client, message):
 
             }
 
-            firebase.put('/knowho-log', num, data)
+            firebase.put('/Truecallerprobot-log', num, data)
 
         elif frbseyename and frbsetrname:
 
@@ -280,7 +280,7 @@ def echo(client, message):
 
             }
 
-            firebase.put('/knowho-log', num, data)
+            firebase.put('/Truecallerprobot-log', num, data)
 
         elif frbsetrname and frbsetrmail:
 
