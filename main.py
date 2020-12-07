@@ -14,7 +14,7 @@ firebase = firebase.FirebaseApplication(cred.DB_URL)
 
 app = Client(
 
-    "KNOW-WHO-BOT",
+    "True Caller Pro Bot",
 
     api_id=cred.API_ID,
 
@@ -46,7 +46,7 @@ def newbt(client,callback_query):
 
     if txt=="about":
 
-        callback_query.message.edit(text=f"`Bot`            : [knowhobot](t.me/knowhobot)\n`Creator :` [agentnova](t.me/agentnova)\n`Language:` [Python3](https://python.org)\n`Library :` [Pyrogram](https://docs.pyrogram.org/) \n`Server  :` [Heroku](https://herokuapp.com/)",
+        callback_query.message.edit(text=f"`Bot`            : [Truecallerprobot](t.me/SandeepBiswal)\n`Creator :` [Sandeep Biswal](t.me/SandeepBiswal)\n`Language:` [Python3](https://python.org)\n`Library :` [Pyrogram](https://docs.pyrogram.org/) \n`Server  :` [Heroku](https://herokuapp.com/)",
 
                         disable_web_page_preview=True, reply_markup=InlineKeyboardMarkup(
 
